@@ -1,0 +1,211 @@
+19:54:43.284 [34mstarting branch[0m
+19:54:43.286 [34mwaitForPeerBranchToConnect[0m
+19:54:43.286 [34mconnectToAllPeerBranch[0m
+19:54:43.287 [32mListening on port 10004....
+[0m
+19:54:43.287 [33mCannot connect to branch E, retrying after 1 second...
+[0m
+19:54:43.288 [34midentifyBranchConnection[0m
+19:54:43.288 [34midentifyBranchConnection[0m
+19:54:43.288 [34midentifyBranchConnection[0m
+19:54:43.289 [37mthe connection to identify is at port 127.0.0.1:40638[0m
+19:54:43.289 [37mthe connection to identify is at port 127.0.0.1:40622[0m
+19:54:43.289 [37mthe connection to identify is at port 127.0.0.1:40620[0m
+19:54:43.290 [32m<Branch A> Connected
+[0m
+19:54:43.290 [32m<Branch C> Connected
+[0m
+19:54:43.290 [32m<Branch B> Connected
+[0m
+19:54:43.291 [34midentifyBranchConnection finished[0m
+19:54:43.291 [34midentifyBranchConnection finished[0m
+19:54:43.291 [34midentifyBranchConnection finished[0m
+19:54:43.293 [34mfinished waitForPeerBranchToConnect[0m
+19:54:43.308 [32m<Branch E> Connected![0m
+19:54:43.309 [34mBranch D Running...[0m
+19:54:43.309 [34mhandleAllPeerBranchConnections[0m
+19:54:43.310 [34mIngesting branch messages[0m
+19:54:43.310 [33mhandle single peer connection C[0m
+19:54:43.310 [33mhandle single peer connection A[0m
+19:54:43.310 [33mhandle single peer connection E[0m
+19:54:43.310 [32mListening on port 10004....
+[0m
+19:54:43.310 [33mhandle single peer connection B[0m
+19:54:43.311 [33mI am monitoring client connection[0m
+19:54:43.311 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:10005, I am at the addr 127.0.0.1:36774[0m
+19:54:43.311 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:40620, I am at the addr 127.0.0.1:10004[0m
+19:54:43.311 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:40622, I am at the addr 127.0.0.1:10004[0m
+19:54:43.311 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:40638, I am at the addr 127.0.0.1:10004[0m
+19:54:43.388 [34mHandling client connection[0m
+19:54:43.389 [34mclient Id a[0m
+2024-04-29 19:54:43.285862304 -0500 CDT
+19:54:43.390 [32m<Client a> Connected
+[0m
+19:54:43.390 [33mhandleTransaction transacId a[0m
+19:54:43.391 [36mStart handling abort for transaction a[0m
+19:54:43.494 [35mReveived data: <DA"a(
+2a:#2024-04-29T19:54:43.285862304-05:00>[0m
+19:54:43.495 [33mhandleTransaction cmd a[0m
+19:54:43.496 [34mReceived Cli Msg with TransacId: a[0m
+19:54:43.496 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.497 [34mSent command message! send to A, the connection is &{{824635687168}}[0m
+19:54:43.498 [37msendBranchMessage sending to the addr 127.0.0.1:40620, I am at the addr 127.0.0.1:10004[0m
+19:54:43.499 [34mSent 55 bytes to connection[0m
+19:54:43.508 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.509 [34mreceived the message from peer
+aDA([0m
+19:54:43.509 [34mIngesting msg: 
+aDA([0m
+19:54:43.510 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:DEPOSIT[0m
+19:54:43.510 [34mSending to Client response fo type: DEPOSIT[0m
+19:54:43.515 [35mReveived data: <DB"b(
+2a:#2024-04-29T19:54:43.285862304-05:00>[0m
+19:54:43.516 [33mhandleTransaction cmd a[0m
+19:54:43.517 [34mReceived Cli Msg with TransacId: a[0m
+19:54:43.517 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.518 [34mSent command message! send to B, the connection is &{{824635687424}}[0m
+19:54:43.519 [37msendBranchMessage sending to the addr 127.0.0.1:40638, I am at the addr 127.0.0.1:10004[0m
+19:54:43.519 [34mSent 55 bytes to connection[0m
+19:54:43.528 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.528 [34mreceived the message from peer
+aDA([0m
+19:54:43.529 [34mIngesting msg: 
+aDA([0m
+19:54:43.530 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:DEPOSIT[0m
+19:54:43.530 [34mSending to Client response fo type: DEPOSIT[0m
+19:54:43.535 [35mReveived data: <DA2a:#2024-04-29T19:54:43.285862304-05:00>[0m
+19:54:43.536 [33mhandleTransaction cmd a[0m
+19:54:43.537 [34mReceived Cli Msg with TransacId: a[0m
+19:54:43.537 [33mHandling Pending Stage Message[0m
+19:54:43.538 [33mStart sending prepare to A[0m
+19:54:43.539 [33mEnd sending prepare to A[0m
+19:54:43.539 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.540 [33mStart sending prepare to B[0m
+19:54:43.540 [34mSent command message! send to A, the connection is &{{824635687168}}[0m
+19:54:43.540 [37msendBranchMessage sending to the addr 127.0.0.1:40620, I am at the addr 127.0.0.1:10004[0m
+19:54:43.540 [33mEnd sending prepare to B[0m
+19:54:43.540 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.541 [33mStart sending prepare to C[0m
+19:54:43.541 [34mSent 50 bytes to connection[0m
+19:54:43.542 [34mSent command message! send to B, the connection is &{{824635687424}}[0m
+19:54:43.542 [33mEnd sending prepare to C[0m
+19:54:43.542 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.543 [37msendBranchMessage sending to the addr 127.0.0.1:40638, I am at the addr 127.0.0.1:10004[0m
+19:54:43.543 [33mStart sending prepare to D[0m
+19:54:43.544 [34mSent 50 bytes to connection[0m
+19:54:43.544 [33mEnd sending prepare to D[0m
+19:54:43.544 [33mhandleCommand, the coo id is 3[0m
+19:54:43.545 [33mdoPrepare on Branch D[0m
+19:54:43.545 [33mStart sending prepare to E[0m
+19:54:43.545 [34mSent command message! send to C, the connection is &{{824635687296}}[0m
+19:54:43.546 [33mEnd sending prepare to E[0m
+19:54:43.546 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.546 [33mpreaparing the command a[0m
+19:54:43.546 [37msendBranchMessage sending to the addr 127.0.0.1:40622, I am at the addr 127.0.0.1:10004[0m
+19:54:43.547 [33mHandling Prepare Stage Message[0m
+19:54:43.547 [34mSent 50 bytes to connection[0m
+19:54:43.548 [34mSent command message! send to E, the connection is &{{824633933952}}[0m
+19:54:43.550 [37msendBranchMessage sending to the addr 127.0.0.1:10005, I am at the addr 127.0.0.1:36774[0m
+19:54:43.551 [34mSent 50 bytes to connection[0m
+19:54:43.555 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.556 [34mreceived the message from peer
+aDA([0m
+19:54:43.557 [34mIngesting msg: 
+aDA([0m
+19:54:43.557 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.558 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.558 [34mreceived the message from peer
+aDA([0m
+19:54:43.558 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:PREPARE[0m
+19:54:43.559 [33mHandling Prepare Stage Message[0m
+19:54:43.559 [34mreceived the message from peer
+aDA([0m
+19:54:43.560 [34mIngesting msg: 
+aDA([0m
+19:54:43.560 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.561 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:PREPARE[0m
+19:54:43.561 [33mHandling Prepare Stage Message[0m
+19:54:43.561 [34mreceived the message from peer
+aDA([0m
+19:54:43.562 [34mIngesting msg: 
+aDA([0m
+19:54:43.563 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:PREPARE[0m
+19:54:43.563 [33mHandling Prepare Stage Message[0m
+19:54:43.564 [34mIngesting msg: 
+aDA([0m
+19:54:43.564 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:PREPARE[0m
+19:54:43.564 [33mHandling Prepare Stage Message[0m
+19:54:43.565 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.566 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.566 [34mSent command message! send to A, the connection is &{{824635687168}}[0m
+19:54:43.566 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.567 [37msendBranchMessage sending to the addr 127.0.0.1:40620, I am at the addr 127.0.0.1:10004[0m
+19:54:43.568 [33mwhen I am sending the commmand, the coordinator is 3[0m
+19:54:43.568 [33mhandleCommand, the coo id is 3[0m
+19:54:43.568 [34mSent 13 bytes to connection[0m
+19:54:43.569 [33mdoCommit on Branch D[0m
+19:54:43.569 [34mSent command message! send to B, the connection is &{{824635687424}}[0m
+19:54:43.570 [36mprint all balances when committing/aborting for transac a[0m
+19:54:43.570 [33mHandling Commit Stage Message[0m
+19:54:43.571 [37msendBranchMessage sending to the addr 127.0.0.1:40638, I am at the addr 127.0.0.1:10004[0m
+19:54:43.572 [34mSent 13 bytes to connection[0m
+19:54:43.572 [34mSent command message! send to C, the connection is &{{824635687296}}[0m
+19:54:43.574 [37msendBranchMessage sending to the addr 127.0.0.1:40622, I am at the addr 127.0.0.1:10004[0m
+19:54:43.575 [34mSent 13 bytes to connection[0m
+19:54:43.576 [34mSent command message! send to E, the connection is &{{824633933952}}[0m
+19:54:43.577 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.577 [37msendBranchMessage sending to the addr 127.0.0.1:10005, I am at the addr 127.0.0.1:36774[0m
+19:54:43.578 [34mreceived the message from peer
+aDA([0m
+19:54:43.578 [34mSent 13 bytes to connection[0m
+19:54:43.579 [34mIngesting msg: 
+aDA([0m
+19:54:43.580 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:COMMIT[0m
+19:54:43.580 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.580 [33mHandling Commit Stage Message[0m
+19:54:43.581 [34mreceived the message from peer
+aDA([0m
+19:54:43.582 [34mIngesting msg: 
+aDA([0m
+19:54:43.583 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.583 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:COMMIT[0m
+19:54:43.584 [33mHandling Commit Stage Message[0m
+19:54:43.584 [34mreceived the message from peer
+aDA([0m
+19:54:43.585 [34mIngesting msg: 
+aDA([0m
+19:54:43.586 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.586 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:COMMIT[0m
+19:54:43.587 [33mHandling Commit Stage Message[0m
+19:54:43.587 [34mreceived the message from peer
+aDA([0m
+19:54:43.588 [34mIngesting msg: 
+aDA([0m
+19:54:43.589 [34mReceived Command Response: TransacId:"a"  CoordBranchId:"D"  BranchId:"A"  Type:COMMIT[0m
+19:54:43.589 [33mHandling Commit Stage Message[0m
+19:54:43.590 [33mSuccessfully Committed[0m
+19:54:43.590 [34mSending to Client response fo type: COMMIT[0m
+19:54:43.853 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.854 [34mreceived the message from peer
+0CD2a:#2024-04-29T19:54:43.600601428-05:00[0m
+19:54:43.855 [34mIngesting msg: 
+0CD2a:#2024-04-29T19:54:43.600601428-05:00[0m
+19:54:43.856 [34mReceived Command: Type:PREPARE  CoordBranchId:"C"  BranchId:"D"  TransacId:"a"  Timestamp:"2024-04-29T19:54:43.600601428-05:00"[0m
+19:54:43.856 [33mhandleCommand, the coo id is 2[0m
+19:54:43.857 [33mdoPrepare on Branch D[0m
+19:54:43.858 [33mpreaparing the command a[0m
+19:54:43.860 [34mSent res message! send to C, the status is OK, transactId: a[0m
+19:54:43.861 [37msendBranchMessage sending to the addr 127.0.0.1:40622, I am at the addr 127.0.0.1:10004[0m
+19:54:43.862 [34mSent 13 bytes to connection[0m
+19:54:43.892 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.893 [34mreceived the message from peer
+CD2a[0m
+19:54:43.894 [34mIngesting msg: 
+CD2a[0m
+19:54:43.895 [34mReceived Command: Type:COMMIT  CoordBranchId:"C"  BranchId:"D"  TransacId:"a"[0m
+19:54:43.895 [33mhandleCommand, the coo id is 2[0m
+19:54:43.896 [33mdoCommit on Branch D[0m
+19:54:43.898 [36mprint all balances when committing/aborting for transac a[0m
+19:54:43.898 [34mSent res message! send to C, the status is OK, transactId: a[0m
+19:54:43.899 [37msendBranchMessage sending to the addr 127.0.0.1:40622, I am at the addr 127.0.0.1:10004[0m
+19:54:43.900 [34mSent 13 bytes to connection[0m

@@ -1,0 +1,31 @@
+19:54:43.600 [34mGet a command with tyep: BEGIN[0m
+19:54:43.702 [32mEstablished connection with Coord Branch C![0m
+19:54:43.704 [34mThe cmdRes.Type is 0[0m
+OK
+19:54:43.806 [34mGet a command with tyep: BALANCE[0m
+19:54:43.808 [35mSent data: <CA"a2a:#2024-04-29T19:54:43.600601428-05:00>[0m
+19:54:43.809 [34mSent transaction and waiting for response....[0m
+19:54:43.824 [35mReveived data: <
+aCA"a(8
+>[0m
+19:54:43.825 [34mReceived response: OK[0m
+19:54:43.826 [34mThe cmdRes.Type is 2[0m
+A.a = 10
+19:54:43.827 [34mGet a command with tyep: BALANCE[0m
+19:54:43.827 [35mSent data: <CB"b2a:#2024-04-29T19:54:43.600601428-05:00>[0m
+19:54:43.828 [34mSent transaction and waiting for response....[0m
+19:54:43.842 [35mReveived data: <
+aCB"b(8
+>[0m
+19:54:43.843 [34mReceived response: OK[0m
+19:54:43.844 [34mThe cmdRes.Type is 2[0m
+B.b = 10
+19:54:43.844 [34mGet a command with tyep: COMMIT[0m
+19:54:43.845 [35mSent data: <CA2a:#2024-04-29T19:54:43.600601428-05:00>[0m
+19:54:43.846 [34mSent transaction and waiting for response....[0m
+19:54:43.909 [35mReveived data: <
+aCA(0>[0m
+19:54:43.910 [34mReceived response: COMMIT_OK[0m
+19:54:43.910 [34mThe cmdRes.Type is 4[0m
+COMMIT OK
+19:54:43.911 [32mClient Terminated[0m

@@ -1,0 +1,20 @@
+- name: Ensure the certificate directory exists
+  ansible.builtin.file:
+    path: "{{ project_directory }}/certificate"
+    state: directory
+    mode: "0755"
+
+- name: Generate RSA key and certificate
+  ansible.builtin.shell:
+    cmd: >
+      openssl req -newkey rsa:2048 -nodes -keyout "{{ project_directory }}/certificate/key.pem"
+      -x509 -days 365 -out "{{ project_directory }}/certificate/certificate.pem"
+      -subj "/C=//ST=//L=//O=//OU=//CN="
+    creates: "{{ project_directory }}/certificate/certificate.pem"
+  args:
+    chdir: "{{ project_directory }}"
+  register: openssl_output
+
+- name: Print output from OpenSSL
+  ansible.builtin.debug:
+    var: openssl_output.stdout_lines

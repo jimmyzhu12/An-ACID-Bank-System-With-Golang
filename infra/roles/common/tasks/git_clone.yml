@@ -1,0 +1,38 @@
+---
+# - name: Check SSH Agent Socket
+#   shell: echo $SSH_AUTH_SOCK
+#   register: ssh_agent_socket
+
+# - name: Print SSH Agent Socket
+#   debug:
+#     msg: "SSH Agent is running, socket: {{ ssh_agent_socket.stdout }}"
+#   when: ssh_agent_socket.stdout != ""
+
+# - name: Warn if SSH Agent is not running
+#   debug:
+#     msg: "SSH Agent is not running. Consider reviewing your SSH agent setup."
+#   when: ssh_agent_socket.stdout == ""
+
+# - name: List SSH keys in the agent
+#   command: ssh-add -l
+#   register: ssh_keys_list
+
+# - name: Print SSH keys
+#   debug:
+#     msg: "{{ ssh_keys_list.stdout }}"
+
+- name: Ensure the project directory is clean
+  ansible.builtin.file:
+    path: "{{ project_directory }}"
+    state: absent
+  when: overwrite_directory | default(false)
+
+- name: Clone a git repository
+  environment:
+    GIT_SSH_COMMAND: "ssh -i ~/.ssh/id_rsa_gh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+  git:
+    repo: "{{ git_repo_url }}"
+    dest: "{{ project_directory }}"
+    clone: yes
+    update: yes
+    force: yes

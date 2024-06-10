@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package main;
+
+option go_package = "mp3/package/message;message";
+
+// Define the CommandType enumeration
+enum CommandType {
+    BEGIN = 0;
+    DEPOSIT = 1;
+    BALANCE = 2;
+    WITHDRAW = 3;
+    COMMIT = 4;
+    ABORT = 5;
+    PREPARE = 6;
+}
+
+// Define the Command message
+message Command {
+    CommandType Type = 1;
+    string CoordBranchId = 2;
+    string BranchId = 3;
+    string Account = 4;
+    int32 Amount = 5;
+    string TransacId = 6;
+    string Timestamp = 7;
+}

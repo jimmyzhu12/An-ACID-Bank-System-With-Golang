@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package main;
+
+// Corrected import statements
+import "package/message/command.proto";
+import "package/message/command_res.proto";
+
+option go_package = "mp3/package/message;message";
+
+message BranchMessage {
+    oneof payload {
+        Command command = 1;
+        CommandRes command_res = 2;
+    }
+}

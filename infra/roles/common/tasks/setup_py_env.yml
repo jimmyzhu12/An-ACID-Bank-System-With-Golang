@@ -1,0 +1,11 @@
+- name: Create a virtual environment using Python 3
+  command: python3 -m venv ./venv
+  args:
+    chdir: "{{ project_directory }}"
+    creates: "{{ project_directory }}/venv"
+
+- name: Install Python libraries and dependencies
+  ansible.builtin.pip:
+    requirements: "{{ project_directory }}/requirements.txt"
+    virtualenv: "{{ project_directory }}/venv"
+    virtualenv_command: python3 -m venv

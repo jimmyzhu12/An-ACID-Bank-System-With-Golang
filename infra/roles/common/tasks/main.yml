@@ -1,0 +1,11 @@
+# roles/common/tasks/main.yml
+# - name: Allow SSH agent forwarding
+#   include_tasks: ssh_forward.yml
+# - name: Install necessary packages
+#   include_tasks: packages.yml
+- name: Clone Git repository
+  include_tasks: git_clone.yml
+# - name: Set up Python environment
+#   include_tasks: setup_py_env.yml
+# - name: Create Self-Signed SSL Certificate
+#   include_tasks: setup_ssl.yml

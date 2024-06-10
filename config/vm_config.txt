@@ -1,0 +1,5 @@
+A sp24-cs425-7501.cs.illinois.edu 3000
+B sp24-cs425-7502.cs.illinois.edu 3000
+C sp24-cs425-7503.cs.illinois.edu 3000
+D sp24-cs425-7504.cs.illinois.edu 3000
+E sp24-cs425-7505.cs.illinois.edu 3000

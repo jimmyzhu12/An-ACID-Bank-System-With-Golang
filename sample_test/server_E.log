@@ -1,0 +1,87 @@
+19:54:43.285 [34mstarting branch[0m
+19:54:43.286 [34mwaitForPeerBranchToConnect[0m
+19:54:43.287 [32mListening on port 10005....
+[0m
+19:54:43.289 [34midentifyBranchConnection[0m
+19:54:43.290 [37mthe connection to identify is at port 127.0.0.1:36744[0m
+19:54:43.291 [32m<Branch B> Connected
+[0m
+19:54:43.292 [34midentifyBranchConnection finished[0m
+19:54:43.308 [34midentifyBranchConnection[0m
+19:54:43.308 [34midentifyBranchConnection[0m
+19:54:43.308 [34midentifyBranchConnection[0m
+19:54:43.310 [37mthe connection to identify is at port 127.0.0.1:36752[0m
+19:54:43.310 [37mthe connection to identify is at port 127.0.0.1:36774[0m
+19:54:43.310 [37mthe connection to identify is at port 127.0.0.1:36766[0m
+19:54:43.311 [32m<Branch C> Connected
+[0m
+19:54:43.311 [32m<Branch A> Connected
+[0m
+19:54:43.311 [32m<Branch D> Connected
+[0m
+19:54:43.312 [34midentifyBranchConnection finished[0m
+19:54:43.312 [34midentifyBranchConnection finished[0m
+19:54:43.312 [34midentifyBranchConnection finished[0m
+19:54:43.313 [34mfinished waitForPeerBranchToConnect[0m
+19:54:43.314 [34mBranch E Running...[0m
+19:54:43.314 [34mhandleAllPeerBranchConnections[0m
+19:54:43.315 [34mIngesting branch messages[0m
+19:54:43.315 [32mListening on port 10005....
+[0m
+19:54:43.315 [33mhandle single peer connection D[0m
+19:54:43.315 [33mhandle single peer connection A[0m
+19:54:43.315 [33mhandle single peer connection C[0m
+19:54:43.315 [33mhandle single peer connection B[0m
+19:54:43.316 [33mI am monitoring client connection[0m
+19:54:43.316 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:36752, I am at the addr 127.0.0.1:10005[0m
+19:54:43.316 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:36774, I am at the addr 127.0.0.1:10005[0m
+19:54:43.316 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:36766, I am at the addr 127.0.0.1:10005[0m
+19:54:43.316 [37mhandleSinglePeerBranchConnection listening on the addr 127.0.0.1:36744, I am at the addr 127.0.0.1:10005[0m
+19:54:43.551 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.552 [34mreceived the message from peer
+0DE2a:#2024-04-29T19:54:43.285862304-05:00[0m
+19:54:43.553 [34mIngesting msg: 
+0DE2a:#2024-04-29T19:54:43.285862304-05:00[0m
+19:54:43.555 [34mReceived Command: Type:PREPARE  CoordBranchId:"D"  BranchId:"E"  TransacId:"a"  Timestamp:"2024-04-29T19:54:43.285862304-05:00"[0m
+19:54:43.555 [33mhandleCommand, the coo id is 3[0m
+19:54:43.556 [33mdoPrepare on Branch E[0m
+19:54:43.557 [33mpreaparing the command a[0m
+19:54:43.558 [34mSent res message! send to D, the status is OK, transactId: a[0m
+19:54:43.559 [37msendBranchMessage sending to the addr 127.0.0.1:36774, I am at the addr 127.0.0.1:10005[0m
+19:54:43.560 [34mSent 13 bytes to connection[0m
+19:54:43.578 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.579 [34mreceived the message from peer
+DE2a[0m
+19:54:43.581 [34mIngesting msg: 
+DE2a[0m
+19:54:43.582 [34mReceived Command: Type:COMMIT  CoordBranchId:"D"  BranchId:"E"  TransacId:"a"[0m
+19:54:43.582 [33mhandleCommand, the coo id is 3[0m
+19:54:43.583 [33mdoCommit on Branch E[0m
+19:54:43.584 [36mprint all balances when committing/aborting for transac a[0m
+19:54:43.584 [34mSent res message! send to D, the status is OK, transactId: a[0m
+19:54:43.585 [37msendBranchMessage sending to the addr 127.0.0.1:36774, I am at the addr 127.0.0.1:10005[0m
+19:54:43.586 [34mSent 13 bytes to connection[0m
+19:54:43.856 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.857 [34mreceived the message from peer
+0CE2a:#2024-04-29T19:54:43.600601428-05:00[0m
+19:54:43.858 [34mIngesting msg: 
+0CE2a:#2024-04-29T19:54:43.600601428-05:00[0m
+19:54:43.860 [34mReceived Command: Type:PREPARE  CoordBranchId:"C"  BranchId:"E"  TransacId:"a"  Timestamp:"2024-04-29T19:54:43.600601428-05:00"[0m
+19:54:43.860 [33mhandleCommand, the coo id is 2[0m
+19:54:43.861 [33mdoPrepare on Branch E[0m
+19:54:43.862 [33mpreaparing the command a[0m
+19:54:43.863 [34mSent res message! send to C, the status is OK, transactId: a[0m
+19:54:43.864 [37msendBranchMessage sending to the addr 127.0.0.1:36766, I am at the addr 127.0.0.1:10005[0m
+19:54:43.865 [34mSent 13 bytes to connection[0m
+19:54:43.895 [33mgot some data in handleSinglePeerBranchConnection[0m
+19:54:43.896 [34mreceived the message from peer
+CE2a[0m
+19:54:43.898 [34mIngesting msg: 
+CE2a[0m
+19:54:43.898 [34mReceived Command: Type:COMMIT  CoordBranchId:"C"  BranchId:"E"  TransacId:"a"[0m
+19:54:43.898 [33mhandleCommand, the coo id is 2[0m
+19:54:43.900 [33mdoCommit on Branch E[0m
+19:54:43.901 [36mprint all balances when committing/aborting for transac a[0m
+19:54:43.901 [34mSent res message! send to C, the status is OK, transactId: a[0m
+19:54:43.902 [37msendBranchMessage sending to the addr 127.0.0.1:36766, I am at the addr 127.0.0.1:10005[0m
+19:54:43.903 [34mSent 13 bytes to connection[0m

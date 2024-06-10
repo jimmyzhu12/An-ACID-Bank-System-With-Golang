@@ -1,0 +1,14 @@
+- name: Check current AllowAgentForwarding setting
+  shell: grep "^AllowAgentForwarding" /etc/ssh/sshd_config | cut -d ' ' -f2
+  register: current_setting
+  ignore_errors: true
+
+- name: Update AllowAgentForwarding setting
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: "^#?AllowAgentForwarding"
+    line: "AllowAgentForwarding yes"
+    state: present
+  when: current_setting.stdout != "yes"
+  notify:
+    - restart sshd

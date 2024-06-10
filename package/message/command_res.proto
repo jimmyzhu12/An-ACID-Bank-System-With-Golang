@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package main;
+
+import "package/message/command.proto";
+
+option go_package = "mp3/package/message;message";
+
+enum CommandStatus {
+    OK = 0;
+    ABORTED = 1;
+    COMMIT_OK = 2;
+    NOT_FOUND = 3;
+}
+
+message CommandRes {
+    string TransacId = 1;     
+    string CoordBranchId = 2;    
+    string BranchId = 3;
+    string Account = 4;
+    CommandType Type = 5;
+    CommandStatus Status = 6;
+    int32 Balance = 7;      
+    string Timestamp = 8;
+}

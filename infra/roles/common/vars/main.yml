@@ -1,0 +1,3 @@
+# roles/common/vars/main.yml
+git_repo_url: "git@gitlab.engr.illinois.edu:cs425-sp24/mp3.git"
+project_directory: "~/mp3"

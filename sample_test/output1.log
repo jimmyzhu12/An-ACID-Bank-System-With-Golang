@@ -1,0 +1,31 @@
+19:54:43.285 [34mGet a command with tyep: BEGIN[0m
+19:54:43.388 [32mEstablished connection with Coord Branch D![0m
+19:54:43.389 [34mThe cmdRes.Type is 0[0m
+OK
+19:54:43.490 [34mGet a command with tyep: DEPOSIT[0m
+19:54:43.493 [35mSent data: <DA"a(
+2a:#2024-04-29T19:54:43.285862304-05:00>[0m
+19:54:43.494 [34mSent transaction and waiting for response....[0m
+19:54:43.511 [35mReveived data: <
+aDA(>[0m
+19:54:43.512 [34mReceived response: OK[0m
+19:54:43.513 [34mThe cmdRes.Type is 1[0m
+OK
+19:54:43.513 [34mGet a command with tyep: DEPOSIT[0m
+19:54:43.514 [35mSent data: <DB"b(
+2a:#2024-04-29T19:54:43.285862304-05:00>[0m
+19:54:43.515 [34mSent transaction and waiting for response....[0m
+19:54:43.531 [35mReveived data: <
+aDA(>[0m
+19:54:43.532 [34mReceived response: OK[0m
+19:54:43.532 [34mThe cmdRes.Type is 1[0m
+OK
+19:54:43.533 [34mGet a command with tyep: COMMIT[0m
+19:54:43.534 [35mSent data: <DA2a:#2024-04-29T19:54:43.285862304-05:00>[0m
+19:54:43.535 [34mSent transaction and waiting for response....[0m
+19:54:43.591 [35mReveived data: <
+aDA(0>[0m
+19:54:43.592 [34mReceived response: COMMIT_OK[0m
+19:54:43.593 [34mThe cmdRes.Type is 4[0m
+COMMIT OK
+19:54:43.594 [32mClient Terminated[0m
